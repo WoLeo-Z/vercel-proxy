@@ -1,7 +1,7 @@
 const fetch = require('node-fetch')
 
 module.exports = (req, res) => {
-  fetch(`https://disqus.com${req.url}`)
+  fetch(`https://scratch.mit.edu${req.url}`)
     .then(r => r.json())
     .then(d => {
       res.setHeader('Access-Control-Allow-Origin', '*')
